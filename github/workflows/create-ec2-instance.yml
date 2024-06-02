@@ -2,7 +2,7 @@ name: Create EC2 Instance
 
 on:
   push:
-    branches:
+    branches: 
       - main
 
 jobs:
