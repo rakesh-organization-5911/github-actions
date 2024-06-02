@@ -17,6 +17,10 @@ on:
 jobs:
   create_instance:
     runs-on: ubuntu-latest
+    environment: ${{ github.event.inputs.environment }}
+    permissions:
+      contents: 'read'
+      id-token: 'write'
     
     steps:
       - name: Checkout Repository
