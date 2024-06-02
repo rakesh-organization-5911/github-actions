@@ -4,15 +4,6 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
-     inputs:
-        environment:
-           description: 'Environment to run tests against'
-           type: choice
-           required: true
-           options:
-             - dev-environment
-             - test
           
 jobs:
   create_instance:
@@ -32,7 +23,6 @@ jobs:
           aws-access-key-id: ${{secrets.ACCESS_KEY}}
           aws-secret-access-key: ${{secrets.SECRET_KEY}}
           aws-region: ap-south-1 
-          audience: sts.amazonaws.com
       
       - name: Create EC2 Instance
         run:
