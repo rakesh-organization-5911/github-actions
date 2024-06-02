@@ -36,4 +36,4 @@ jobs:
       
       - name: Create EC2 Instance
         run:
-          aws ec2 run-instances --image-id ami-00fa32593b478ad6e --instance-type t2.micro --key-name KEY-PAIR-PEM-FILE --security-group-ids sg-020330084abb94db8 --subnet-id subnet-0d8c9d5737d8babc
+          aws ec2 run-instances --image-id ami-00fa32593b478ad6e --instance-type t2.micro --key-name KEY-PAIR-PEM-FILE --security-group-ids sg-020330084abb94db8 --subnet-id subnet-0d8c9d5737d8babc1
