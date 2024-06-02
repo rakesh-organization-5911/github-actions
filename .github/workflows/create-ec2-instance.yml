@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-   workflow_dispatch:
-      inputs:
       environment:
         description: 'Environment to run tests against'
         type: choice
